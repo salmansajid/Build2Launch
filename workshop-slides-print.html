@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vibecoding & AI Workshop | Build2Launch</title>
+  <style>
+    @page {
+      size: landscape;
+      margin: 0;
+    }
+    :root {
+      --bg: #0b1f1c;
+      --text: #f4fffb;
+      --muted: #b7d5ce;
+      --accent: #2dd4bf;
+      --accent-2: #5eead4;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      page-break-after: always;
+      break-after: page;
+      padding: 3.2rem 3.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.25), transparent 40%),
+        var(--bg);
+    }
+    .slide:last-child { page-break-after: auto; }
+    .card {
+      width: 100%;
+      height: 100%;
+      padding: 2.8rem;
+      border: 1px solid rgba(94, 234, 212, 0.25);
+      border-radius: 28px;
+      background: linear-gradient(160deg, rgba(18, 48, 43, 0.95), rgba(11, 31, 28, 0.92));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 3.4rem;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+      margin: 0 0 1rem;
+    }
+    p, li {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    strong { color: var(--text); }
+    .eyebrow {
+      font-family: "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .chip {
+      font-family: "Segoe UI", sans-serif;
+      border: 1px solid rgba(94, 234, 212, 0.35);
+      border-radius: 999px;
+      padding: 0.55rem 0.9rem;
+      color: var(--accent-2);
+      font-size: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      margin-top: 1rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.85rem 0.6rem;
+      border-bottom: 1px solid rgba(183, 213, 206, 0.2);
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    th { color: var(--accent-2); }
+    ol, ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
+    li + li { margin-top: 0.45rem; }
+    .note {
+      margin-top: 1.5rem;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid var(--accent);
+      background: rgba(45, 212, 191, 0.08);
+      color: var(--text);
+      font-family: "Segoe UI", sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Build2Launch · NICKHI Campus Ambassador</div>
+    <h1>Vibecoding & AI Workshop</h1>
+    <p>Interactive Training + Live Demonstration</p>
+    <div class="meta">
+      <div class="chip">Duration: 2 Hours</div>
+      <div class="chip">Beginner-friendly</div>
+      <div class="chip">Idea → Deployed App</div>
+    </div>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Objective</div>
+    <h2>What this workshop is for</h2>
+    <p>To introduce participants to AI-assisted development and equip them with the basic skills to turn an idea into a functional AI-powered application using vibecoding — even with minimal coding knowledge.</p>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Agenda</div>
+    <h2>Training Schedule</h2>
+    <table>
+      <tr><th>No.</th><th>Session</th><th>Time</th></tr>
+      <tr><td>1</td><td>Workshop Introduction: Startups, AI & Vibecoding</td><td>10 min</td></tr>
+      <tr><td>2</td><td>AI Models & Development Tools</td><td>10 min</td></tr>
+      <tr><td>3</td><td>Prompt Engineering</td><td>10 min</td></tr>
+      <tr><td>4</td><td>Live Demo: Building an AI-Powered App</td><td>80 min</td></tr>
+      <tr><td>5</td><td>Closing Remarks & Next Steps</td><td>10 min</td></tr>
+    </table>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Session 1 · 10 min</div>
+    <h2>Startups, AI & Vibecoding</h2>
+    <ul>
+      <li>How startup ideas become solutions</li>
+      <li>Introduction to AI and real applications</li>
+      <li>Understanding vibecoding</li>
+      <li>Building apps with minimal coding knowledge</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Session 2 · 10 min</div>
+    <h2>AI Models & Development Tools</h2>
+    <ul>
+      <li><strong>Gemini Flash-Lite</strong> — primary AI model</li>
+      <li><strong>VS Code</strong> — development environment</li>
+      <li><strong>GitHub</strong> — code management</li>
+      <li><strong>Kaggle</strong> — datasets</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Session 3 · 10 min</div>
+    <h2>Prompt Engineering</h2>
+    <ul>
+      <li>Why prompts matter in AI-assisted development</li>
+      <li>Writing prompts to generate, modify, and debug code</li>
+      <li>Models covered: ChatGPT, DeepSeek, Claude</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Session 4 · 80 min</div>
+    <h2>Live Demonstration</h2>
+    <ol>
+      <li>API Key Generation (Google AI Studio)</li>
+      <li>Idea → effective development prompt</li>
+      <li>Code generation with an LLM</li>
+      <li>Setup in VS Code</li>
+      <li>Dataset from Kaggle</li>
+      <li>Train / integrate ML model</li>
+      <li>Integrate Gemini</li>
+      <li>Test & deploy on Vercel</li>
+    </ol>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Key Concept</div>
+    <h2>Gemini + Dataset, correctly</h2>
+    <p>Gemini Flash-Lite is a generative AI model accessed through an API.</p>
+    <div class="note">
+      It is not directly trained on a Kaggle dataset through its API.
+      A separate ML model is trained on the dataset, then integrated alongside Gemini.
+    </div>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Session 5 · 10 min</div>
+    <h2>Closing & Next Steps</h2>
+    <ul>
+      <li>Recap of tools and concepts</li>
+      <li>How to continue independently after the seminar</li>
+      <li>Practice vibecoding, datasets, and AI apps</li>
+      <li>PDF resource shared for future reference</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div class="card">
+    <div class="eyebrow">Build2Launch</div>
+    <h1>Thank You</h1>
+    <p>Let’s turn ideas into working AI-powered applications.</p>
+    <div class="meta">
+      <div class="chip">NICKHI Campus Ambassador</div>
+      <div class="chip">Questions welcome</div>
+    </div>
+  </div></section>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibecoding & AI Workshop | Build2Launch</title>
+  <style>
+    :root {
+      --bg: #0b1f1c;
+      --panel: #12302b;
+      --text: #f4fffb;
+      --muted: #b7d5ce;
+      --accent: #2dd4bf;
+      --accent-2: #5eead4;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.25), transparent 40%),
+        var(--bg);
+    }
+    .deck {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    .slide {
+      display: none;
+      width: min(1100px, 100%);
+      min-height: min(620px, 80vh);
+      padding: 3rem;
+      border: 1px solid rgba(94, 234, 212, 0.25);
+      border-radius: 28px;
+      background: linear-gradient(160deg, rgba(18, 48, 43, 0.95), rgba(11, 31, 28, 0.92));
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    }
+    .slide.active { display: block; }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin: 0 0 1rem;
+    }
+    p, li {
+      font-family: "Segoe UI", sans-serif;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .eyebrow {
+      font-family: "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .chip {
+      font-family: "Segoe UI", sans-serif;
+      border: 1px solid rgba(94, 234, 212, 0.35);
+      border-radius: 999px;
+      padding: 0.55rem 0.9rem;
+      color: var(--accent-2);
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      margin-top: 1rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.85rem 0.6rem;
+      border-bottom: 1px solid rgba(183, 213, 206, 0.2);
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    th { color: var(--accent-2); }
+    ol, ul { padding-left: 1.2rem; }
+    li + li { margin-top: 0.45rem; }
+    .note {
+      margin-top: 1.5rem;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid var(--accent);
+      background: rgba(45, 212, 191, 0.08);
+      color: var(--text);
+      font-family: "Segoe UI", sans-serif;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      font-family: "Segoe UI", sans-serif;
+      color: var(--muted);
+      font-size: 0.9rem;
+      pointer-events: none;
+    }
+    .hint { opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <section class="slide active">
+      <div class="eyebrow">Build2Launch · NICKHI Campus Ambassador</div>
+      <h1>Vibecoding & AI Workshop</h1>
+      <p>Interactive Training + Live Demonstration</p>
+      <div class="meta">
+        <div class="chip">Duration: 2 Hours</div>
+        <div class="chip">Beginner-friendly</div>
+        <div class="chip">Idea → Deployed App</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Objective</div>
+      <h2>What this workshop is for</h2>
+      <p>To introduce participants to AI-assisted development and equip them with the basic skills to turn an idea into a functional AI-powered application using vibecoding — even with minimal coding knowledge.</p>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Agenda</div>
+      <h2>Training Schedule</h2>
+      <table>
+        <tr><th>No.</th><th>Session</th><th>Time</th></tr>
+        <tr><td>1</td><td>Workshop Introduction: Startups, AI & Vibecoding</td><td>10 min</td></tr>
+        <tr><td>2</td><td>AI Models & Development Tools</td><td>10 min</td></tr>
+        <tr><td>3</td><td>Prompt Engineering</td><td>10 min</td></tr>
+        <tr><td>4</td><td>Live Demo: Building an AI-Powered App</td><td>80 min</td></tr>
+        <tr><td>5</td><td>Closing Remarks & Next Steps</td><td>10 min</td></tr>
+      </table>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Session 1 · 10 min</div>
+      <h2>Startups, AI & Vibecoding</h2>
+      <ul>
+        <li>How startup ideas become solutions</li>
+        <li>Introduction to AI and real applications</li>
+        <li>Understanding vibecoding</li>
+        <li>Building apps with minimal coding knowledge</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Session 2 · 10 min</div>
+      <h2>AI Models & Development Tools</h2>
+      <ul>
+        <li><strong>Gemini Flash-Lite</strong> — primary AI model</li>
+        <li><strong>VS Code</strong> — development environment</li>
+        <li><strong>GitHub</strong> — code management</li>
+        <li><strong>Kaggle</strong> — datasets</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Session 3 · 10 min</div>
+      <h2>Prompt Engineering</h2>
+      <ul>
+        <li>Why prompts matter in AI-assisted development</li>
+        <li>Writing prompts to generate, modify, and debug code</li>
+        <li>Models covered: ChatGPT, DeepSeek, Claude</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Session 4 · 80 min</div>
+      <h2>Live Demonstration</h2>
+      <ol>
+        <li>API Key Generation (Google AI Studio)</li>
+        <li>Idea → effective development prompt</li>
+        <li>Code generation with an LLM</li>
+        <li>Setup in VS Code</li>
+        <li>Dataset from Kaggle</li>
+        <li>Train / integrate ML model</li>
+        <li>Integrate Gemini</li>
+        <li>Test & deploy on Vercel</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Key Concept</div>
+      <h2>Gemini + Dataset, correctly</h2>
+      <p>Gemini Flash-Lite is a generative AI model accessed through an API.</p>
+      <div class="note">
+        It is not directly trained on a Kaggle dataset through its API.
+        A separate ML model is trained on the dataset, then integrated alongside Gemini.
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Session 5 · 10 min</div>
+      <h2>Closing & Next Steps</h2>
+      <ul>
+        <li>Recap of tools and concepts</li>
+        <li>How to continue independently after the seminar</li>
+        <li>Practice vibecoding, datasets, and AI apps</li>
+        <li>PDF resource shared for future reference</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <div class="eyebrow">Build2Launch</div>
+      <h1>Thank You</h1>
+      <p>Let’s turn ideas into working AI-powered applications.</p>
+      <div class="meta">
+        <div class="chip">NICKHI Campus Ambassador</div>
+        <div class="chip">Questions welcome</div>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+    <div>Vibecoding & AI Workshop</div>
+    <div class="hint">← → or click to navigate · <span id="count"></span></div>
+  </div>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    let index = 0;
+    const count = document.getElementById('count');
+
+    function show(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach((slide, idx) => slide.classList.toggle('active', idx === index));
+      count.textContent = `${index + 1} / ${slides.length}`;
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) show(index + 1);
+      if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) show(index - 1);
+    });
+    document.addEventListener('click', () => show(index + 1));
+    show(0);
+  </script>
+</body>
+</html>
