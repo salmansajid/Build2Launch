@@ -128,7 +128,7 @@ Building a simple, functional AI-powered application using:
 
 ---
 
-## Slide 11 — Trainer Demo Requirements
+## Slide 11 — Demo Requirements
 
 # Demonstration Stack
 

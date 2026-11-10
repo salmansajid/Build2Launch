@@ -1,17 +1,17 @@
-# Vibecoding & AI Workshop — Trainer Playbook
+# Vibecoding & AI Workshop — Workshop Playbook
 **Build2Launch by NICKHI Campus Ambassador**  
-**Duration:** 2 hours | **Your role:** First-time trainer, live demo lead
+**Duration:** 2 hours | **Role:** Workshop facilitator / live demo lead
 
 ---
 
-## The one rule for tomorrow
+## The one rule for delivery
 
-**Do not invent live.** Prepare tonight. Tomorrow you *perform* a rehearsed demo that looks spontaneous.
+**Prepare first. Perform live.** Rehearse the demo so it looks spontaneous on stage.
 
 If something breaks, say:  
-> “This is normal in real development. Let’s switch to the backup and keep moving.”
+> “This is normal in real development. Let’s continue from the prepared project and keep moving.”
 
-Then switch. Never debug for more than 2–3 minutes on stage.
+Then continue. Avoid debugging for more than 2–3 minutes on stage.
 
 ---
 
@@ -24,7 +24,7 @@ A feedback analyzer that:
 3. Uses **Gemini 3.1 Flash-Lite** to explain the prediction and suggest a polite reply
 4. Deploys to **Vercel**
 
-**Why this project works for a first workshop**
+**Why this project works well for the workshop**
 - Fits every requirement in the brief
 - Text data is faster and more reliable than images live
 - Easy story for startups: “turn customer feedback into action”
@@ -58,12 +58,12 @@ Use this small dataset:
 3. Save a trimmed file as `data/reviews_sample.csv` (max ~3,000 rows)
 4. Put it in your project folder so you don’t depend on wifi for download tomorrow
 
-### Pre-build the “safety net” (60–90 min)
-Build a **working version** of ReviewRadar tonight and keep it in a private GitHub repo or local folder named `reviewradar-backup`.
+### Prepare the demo app (60–90 min)
+Build a **working version** of ReviewRadar and keep it in GitHub / local folder `reviewradar-backup`.
 
-Tomorrow you will *pretend* to build it from scratch with vibecoding — but if live generation fails, open the backup and continue from the next step.
+During the session, demonstrate vibecoding live. If generation is messy, continue from the prepared project so participants still see the full workflow.
 
-Minimum backup must include:
+Minimum demo app must include:
 - [ ] Working Next.js app locally
 - [ ] Trained model exported as `model.json`
 - [ ] Gemini API route working with `.env.local`
@@ -121,7 +121,7 @@ Affirm them. That’s who this workshop is for.
 ### Do NOT
 - Over-explain AI history
 - Talk about neural networks deeply
-- Apologize for being a first-time trainer
+- Spend too long debugging on stage
 
 ---
 
@@ -205,7 +205,7 @@ Say: “Use whichever you have access to. Prompt quality matters more than brand
    ```
 6. Show blank UI working in browser
 
-**If generation is messy:** open your backup project and say you’re continuing from a prepared scaffold so the audience sees the full flow.
+**If generation is messy:** open the prepared project and continue so the audience still sees the full flow.
 
 ### Block C — Dataset (15 min)
 1. Open Kaggle (or your pre-downloaded CSV)
@@ -239,7 +239,7 @@ Say: “Use whichever you have access to. Prompt quality matters more than brand
 4. Deploy
 5. Open live URL and run one prediction
 
-**If Vercel fails:** show your pre-deployed backup URL and explain the exact steps you already did.
+**If Vercel fails:** show your pre-deployed URL and explain the exact steps.
 
 ---
 
@@ -267,13 +267,13 @@ Say: “Use whichever you have access to. Prompt quality matters more than brand
 
 ---
 
-## Stage presence tips (first-time trainer)
+## Stage presence tips
 
 1. **Stand and smile** in the first 30 seconds. Energy beats expertise.
 2. **Narrate every click:** “I’m opening AI Studio… creating a key… pasting into env…”
 3. **Ask 2–3 easy questions** so it’s not a monologue.
-4. **When stuck:** backup project within 2 minutes.
-5. **Never blame the audience’s wifi / their skill.** Own the recovery.
+4. **When stuck:** continue from the prepared project within 2 minutes.
+5. **Own the recovery.** Keep the session moving.
 6. **Leave 5 minutes of buffer** inside the 80-min demo by moving fast in Blocks A–C.
 
 ---
@@ -283,7 +283,7 @@ Say: “Use whichever you have access to. Prompt quality matters more than brand
 | Problem | Fix in <2 min |
 |---------|----------------|
 | No internet / Kaggle slow | Use pre-downloaded CSV |
-| LLM gives broken code | Open backup project |
+| LLM gives broken code | Open prepared project |
 | Gemini API error | Check `.env.local`, restart `npm run dev` |
 | Model training fails | Use pre-exported `model.json` |
 | Vercel deploy fails | Open pre-deployed URL + explain steps |

@@ -60,8 +60,8 @@ Say this out loud once while clicking:
 9. **Optional:** open Vercel/GitHub if time; otherwise say deploy steps
 
 If live coding fails, say:
-> “This is normal in real development. Switching to backup.”
-Then open this already-working app.
+> “This is normal in real development. Continuing from the prepared project.”
+Then open the working ReviewRadar app.
 
 ---
 
@@ -114,4 +114,4 @@ This still matches the workshop goal.
 - [ ] Positive + negative review both work
 - [ ] Slides open
 - [ ] Speaking script open
-- [ ] One backup sentence ready if something breaks
+- [ ] One recovery sentence ready if something breaks

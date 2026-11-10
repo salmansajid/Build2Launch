@@ -1,6 +1,6 @@
 # Speaking Script (almost word-for-word)
 
-Use this if you freeze. You can read it.
+Delivery script for the workshop.
 
 ---
 
@@ -76,7 +76,7 @@ Then we deploy on Vercel.”
 “Local is not enough. Shipping matters. Vercel gives us a public URL.”
 
 ### If something breaks
-“This is normal in real development. I’m switching to the prepared backup so we can keep learning the full workflow.”
+“This is normal in real development. Let’s continue from the prepared project so we keep the full workflow moving.”
 
 ---
 
