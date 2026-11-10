@@ -1,228 +1,446 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Vibecoding & AI Workshop | Build2Launch</title>
-  <style>
-    @page {
-      size: landscape;
-      margin: 0;
-    }
-    :root {
-      --bg: #0b1f1c;
-      --text: #f4fffb;
-      --muted: #b7d5ce;
-      --accent: #2dd4bf;
-      --accent-2: #5eead4;
-    }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-    }
-    .slide {
-      width: 100vw;
-      height: 100vh;
-      page-break-after: always;
-      break-after: page;
-      padding: 3.2rem 3.6rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background:
-        radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.25), transparent 40%),
-        var(--bg);
-    }
-    .slide:last-child { page-break-after: auto; }
-    .card {
-      width: 100%;
-      height: 100%;
-      padding: 2.8rem;
-      border: 1px solid rgba(94, 234, 212, 0.25);
-      border-radius: 28px;
-      background: linear-gradient(160deg, rgba(18, 48, 43, 0.95), rgba(11, 31, 28, 0.92));
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    h1 {
-      font-size: 3.4rem;
-      line-height: 1.1;
-      margin: 0 0 1rem;
-    }
-    h2 {
-      font-size: 2.3rem;
-      margin: 0 0 1rem;
-    }
-    p, li {
-      font-family: "Segoe UI", sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.55;
-      color: var(--muted);
-    }
-    strong { color: var(--text); }
-    .eyebrow {
-      font-family: "Segoe UI", sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-    .chip {
-      font-family: "Segoe UI", sans-serif;
-      border: 1px solid rgba(94, 234, 212, 0.35);
-      border-radius: 999px;
-      padding: 0.55rem 0.9rem;
-      color: var(--accent-2);
-      font-size: 1rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: "Segoe UI", sans-serif;
-      margin-top: 1rem;
-    }
-    th, td {
-      text-align: left;
-      padding: 0.85rem 0.6rem;
-      border-bottom: 1px solid rgba(183, 213, 206, 0.2);
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-    th { color: var(--accent-2); }
-    ol, ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
-    li + li { margin-top: 0.45rem; }
-    .note {
-      margin-top: 1.5rem;
-      padding: 1rem 1.2rem;
-      border-left: 4px solid var(--accent);
-      background: rgba(45, 212, 191, 0.08);
-      color: var(--text);
-      font-family: "Segoe UI", sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-<body>
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Build2Launch · NICKHI Campus Ambassador</div>
-    <h1>Vibecoding & AI Workshop</h1>
-    <p>Interactive Training + Live Demonstration</p>
-    <div class="meta">
-      <div class="chip">Duration: 2 Hours</div>
-      <div class="chip">Beginner-friendly</div>
-      <div class="chip">Idea → Deployed App</div>
-    </div>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Objective</div>
-    <h2>What this workshop is for</h2>
-    <p>To introduce participants to AI-assisted development and equip them with the basic skills to turn an idea into a functional AI-powered application using vibecoding — even with minimal coding knowledge.</p>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Agenda</div>
-    <h2>Training Schedule</h2>
-    <table>
-      <tr><th>No.</th><th>Session</th><th>Time</th></tr>
-      <tr><td>1</td><td>Workshop Introduction: Startups, AI & Vibecoding</td><td>10 min</td></tr>
-      <tr><td>2</td><td>AI Models & Development Tools</td><td>10 min</td></tr>
-      <tr><td>3</td><td>Prompt Engineering</td><td>10 min</td></tr>
-      <tr><td>4</td><td>Live Demo: Building an AI-Powered App</td><td>80 min</td></tr>
-      <tr><td>5</td><td>Closing Remarks & Next Steps</td><td>10 min</td></tr>
-    </table>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Session 1 · 10 min</div>
-    <h2>Startups, AI & Vibecoding</h2>
-    <ul>
-      <li>How startup ideas become solutions</li>
-      <li>Introduction to AI and real applications</li>
-      <li>Understanding vibecoding</li>
-      <li>Building apps with minimal coding knowledge</li>
-    </ul>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Session 2 · 10 min</div>
-    <h2>AI Models & Development Tools</h2>
-    <ul>
-      <li><strong>Gemini Flash-Lite</strong> — primary AI model</li>
-      <li><strong>VS Code</strong> — development environment</li>
-      <li><strong>GitHub</strong> — code management</li>
-      <li><strong>Kaggle</strong> — datasets</li>
-    </ul>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Session 3 · 10 min</div>
-    <h2>Prompt Engineering</h2>
-    <ul>
-      <li>Why prompts matter in AI-assisted development</li>
-      <li>Writing prompts to generate, modify, and debug code</li>
-      <li>Models covered: ChatGPT, DeepSeek, Claude</li>
-    </ul>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Session 4 · 80 min</div>
-    <h2>Live Demonstration</h2>
-    <ol>
-      <li>API Key Generation (Google AI Studio)</li>
-      <li>Idea → effective development prompt</li>
-      <li>Code generation with an LLM</li>
-      <li>Setup in VS Code</li>
-      <li>Dataset from Kaggle</li>
-      <li>Train / integrate ML model</li>
-      <li>Integrate Gemini</li>
-      <li>Test & deploy on Vercel</li>
-    </ol>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Key Concept</div>
-    <h2>Gemini + Dataset, correctly</h2>
-    <p>Gemini Flash-Lite is a generative AI model accessed through an API.</p>
-    <div class="note">
-      It is not directly trained on a Kaggle dataset through its API.
-      A separate ML model is trained on the dataset, then integrated alongside Gemini.
-    </div>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Session 5 · 10 min</div>
-    <h2>Closing & Next Steps</h2>
-    <ul>
-      <li>Recap of tools and concepts</li>
-      <li>How to continue independently after the seminar</li>
-      <li>Practice vibecoding, datasets, and AI apps</li>
-      <li>PDF resource shared for future reference</li>
-    </ul>
-  </div></section>
-
-  <section class="slide"><div class="card">
-    <div class="eyebrow">Build2Launch</div>
-    <h1>Thank You</h1>
-    <p>Let’s turn ideas into working AI-powered applications.</p>
-    <div class="meta">
-      <div class="chip">NICKHI Campus Ambassador</div>
-      <div class="chip">Questions welcome</div>
-    </div>
-  </div></section>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>Vibecoding & AI Workshop | Build2Launch</title><style>
+@page { size: landscape; margin: 0; }
+:root {
+  --bg: #071816; --text: #f4fffb; --muted: #b7d5ce; --accent: #2dd4bf;
+  --accent-2: #5eead4; --bad: #fb7185; --good: #34d399;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Georgia, "Times New Roman", serif; }
+.slide {
+  width: 100vw; height: 100vh; page-break-after: always; break-after: page;
+  padding: 2.2rem 2.6rem; display: flex; flex-direction: column; justify-content: center;
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.22), transparent 40%),
+    var(--bg);
+}
+.slide:last-child { page-break-after: auto; }
+.card-wrap {
+  width: 100%; height: 100%; padding: 2rem 2.3rem; border-radius: 28px;
+  border: 1px solid rgba(94, 234, 212, 0.25);
+  background: linear-gradient(160deg, rgba(18, 48, 43, 0.96), rgba(8, 24, 22, 0.94));
+  overflow: hidden;
+}
+h1 { font-size: 2.8rem; line-height: 1.08; margin: 0 0 0.7rem; }
+h2 { font-size: 2rem; margin: 0 0 0.7rem; }
+h3 { font-family: "Segoe UI", sans-serif; font-size: 1rem; margin: 0 0 0.45rem; color: var(--accent-2); }
+p, li { font-family: "Segoe UI", sans-serif; font-size: 1.05rem; line-height: 1.45; color: var(--muted); }
+strong { color: var(--text); }
+.eyebrow { font-family: "Segoe UI", sans-serif; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); font-size: 0.8rem; font-weight: 700; margin-bottom: 0.7rem; }
+.meta { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
+.chip { font-family: "Segoe UI", sans-serif; border: 1px solid rgba(94, 234, 212, 0.35); border-radius: 999px; padding: 0.4rem 0.75rem; color: var(--accent-2); font-size: 0.88rem; }
+.grid-2, .grid-3, .grid-4 { display: grid; gap: 0.75rem; margin-top: 0.8rem; }
+.grid-2, .grid-4 { grid-template-columns: 1fr 1fr; }
+.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(94, 234, 212, 0.18); border-radius: 16px; padding: 0.85rem 0.95rem; }
+.card p, .card li { font-size: 0.92rem; margin: 0; }
+.card ul { margin: 0.3rem 0 0; padding-left: 1rem; }
+.flow { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: 0.8rem; font-family: "Segoe UI", sans-serif; }
+.flow span { background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(94, 234, 212, 0.28); color: var(--text); padding: 0.45rem 0.7rem; border-radius: 10px; font-size: 0.88rem; }
+.flow .arrow { background: transparent; border: 0; color: var(--accent-2); padding: 0; }
+table { width: 100%; border-collapse: collapse; font-family: "Segoe UI", sans-serif; margin-top: 0.6rem; }
+th, td { text-align: left; padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(183, 213, 206, 0.18); color: var(--muted); font-size: 0.92rem; }
+th { color: var(--accent-2); }
+ol, ul { padding-left: 1.1rem; margin: 0.35rem 0 0; }
+li + li { margin-top: 0.28rem; }
+.note { margin-top: 0.8rem; padding: 0.75rem 0.9rem; border-left: 4px solid var(--accent); background: rgba(45, 212, 191, 0.08); color: var(--text); font-family: "Segoe UI", sans-serif; font-size: 0.95rem; }
+.prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.78rem; line-height: 1.4; color: #d8fff6; background: rgba(0,0,0,0.28); border: 1px solid rgba(94, 234, 212, 0.18); border-radius: 12px; padding: 0.7rem 0.8rem; margin-top: 0.55rem; white-space: pre-wrap; }
+.bad { border-color: rgba(251, 113, 133, 0.35); }
+.bad h3 { color: var(--bad); }
+.good { border-color: rgba(52, 211, 153, 0.35); }
+.good h3 { color: var(--good); }
+.compare-label { font-family: "Segoe UI", sans-serif; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.25rem; }
+.steps { counter-reset: step; list-style: none; padding: 0; margin: 0.6rem 0 0; }
+.steps li { position: relative; padding-left: 2.3rem; margin-top: 0.5rem; font-size: 0.98rem; }
+.steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0; width: 1.6rem; height: 1.6rem; border-radius: 999px; display: grid; place-items: center; background: rgba(45, 212, 191, 0.16); border: 1px solid rgba(94, 234, 212, 0.35); color: var(--accent-2); font-size: 0.78rem; font-weight: 700; }
+</style></head><body><section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Build2Launch · NICKHI Campus Ambassador</div>
+      <h1>Vibecoding & AI Workshop</h1>
+      <p>Turn an idea into a working AI-powered application — even with minimal coding experience.</p>
+      <div class="meta">
+        <div class="chip">2 Hours</div>
+        <div class="chip">Interactive + Live Demo</div>
+        <div class="chip">Idea → Deploy</div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Workshop Goal</div>
+      <h2>What you will leave with</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Mindset</h3>
+          <ul>
+            <li>Startups begin with problems, not code</li>
+            <li>AI is a teammate, not magic</li>
+            <li>Ship version one, then improve</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Skills</h3>
+          <ul>
+            <li>Write better prompts</li>
+            <li>Generate and run app code</li>
+            <li>Use datasets + ML + Gemini together</li>
+            <li>Deploy a live app</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">Today’s promise: Idea → Prompt → Code → Dataset → ML Model → Gemini → Deploy</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Agenda · 120 minutes</div>
+      <h2>Training schedule</h2>
+      <table>
+        <tr><th>No.</th><th>Session</th><th>Focus</th><th>Time</th></tr>
+        <tr><td>1</td><td>Startups, AI & Vibecoding</td><td>Concepts</td><td>10 min</td></tr>
+        <tr><td>2</td><td>AI Models & Tools</td><td>Gemini, VS Code, GitHub, Kaggle</td><td>10 min</td></tr>
+        <tr><td>3</td><td>Prompt Engineering</td><td>Role + Goal + Constraints</td><td>10 min</td></tr>
+        <tr><td>4</td><td>Live Demonstration</td><td>Build ReviewRadar</td><td>80 min</td></tr>
+        <tr><td>5</td><td>Closing & Next Steps</td><td>Practice plan</td><td>10 min</td></tr>
+      </table>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 1 · Teaching</div>
+      <h2>What is a startup, really?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. Problem</h3>
+          <p>Find a real pain point people feel often.</p>
+        </div>
+        <div class="card">
+          <h3>2. Solution</h3>
+          <p>Design the simplest useful product that helps.</p>
+        </div>
+        <div class="card">
+          <h3>3. Ship</h3>
+          <p>Build a small version, test with users, improve.</p>
+        </div>
+      </div>
+      <div class="note">Example problem today: customer reviews are emotional and messy. Businesses need fast understanding.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 1 · Teaching</div>
+      <h2>What is Artificial Intelligence?</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>In simple words</h3>
+          <p>AI systems learn patterns from data and help with tasks like writing, classifying, recommending, and generating code.</p>
+        </div>
+        <div class="card">
+          <h3>Useful types for builders</h3>
+          <ul>
+            <li><strong>Generative AI</strong> — writes text, code, explanations</li>
+            <li><strong>Machine Learning</strong> — predicts labels/scores from examples</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">In this workshop we use both: an ML classifier + Gemini generative AI.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 1 · Teaching</div>
+      <h2>What is vibecoding?</h2>
+      <p>Building software by describing what you want in plain language, generating code with an LLM, then testing and improving quickly.</p>
+      <div class="flow">
+        <span>Describe idea</span><span class="arrow">→</span>
+        <span>Write prompt</span><span class="arrow">→</span>
+        <span>Generate code</span><span class="arrow">→</span>
+        <span>Run &amp; fix</span><span class="arrow">→</span>
+        <span>Ship</span>
+      </div>
+      <div class="grid-2" style="margin-top:1.1rem;">
+        <div class="card">
+          <h3>You still need</h3>
+          <ul>
+            <li>Clear thinking</li>
+            <li>Testing</li>
+            <li>Basic debugging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AI helps with</h3>
+          <ul>
+            <li>Boilerplate code</li>
+            <li>Faster iteration</li>
+            <li>Explanations &amp; rewrites</li>
+          </ul>
+        </div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 2 · Tools</div>
+      <h2>Your workshop toolkit</h2>
+      <div class="grid-4">
+        <div class="card">
+          <h3>Gemini Flash-Lite</h3>
+          <p>Fast generative AI model for explanations and replies via API.</p>
+        </div>
+        <div class="card">
+          <h3>VS Code</h3>
+          <p>Where code lives, edits happen, and the app runs locally.</p>
+        </div>
+        <div class="card">
+          <h3>GitHub</h3>
+          <p>Stores your project online and connects to deployment.</p>
+        </div>
+        <div class="card">
+          <h3>Kaggle</h3>
+          <p>Source of real datasets for training a small ML model.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="chip">Also: ChatGPT / Claude / DeepSeek for code generation</div>
+        <div class="chip">Vercel for deployment</div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 2 · Critical Concept</div>
+      <h2>Gemini ≠ Kaggle training</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Gemini Flash-Lite</h3>
+          <ul>
+            <li>Generative AI</li>
+            <li>Accessed with an API key</li>
+            <li>Great at writing &amp; explaining</li>
+            <li>Not trained on your CSV through the API</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Separate ML model</h3>
+          <ul>
+            <li>Trained on Kaggle-style dataset</li>
+            <li>Learns Positive / Negative patterns</li>
+            <li>Exports to <strong>model.json</strong></li>
+            <li>Used for prediction inside the app</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">Final product = ML prediction + Gemini explanation/reply.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 3 · Prompt Engineering</div>
+      <h2>The 3-part prompt formula</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. Role</h3>
+          <p>Who should the AI act as?</p>
+          <p style="margin-top:0.5rem;"><strong>“Act as a senior Next.js engineer…”</strong></p>
+        </div>
+        <div class="card">
+          <h3>2. Goal</h3>
+          <p>What exact outcome do you want?</p>
+          <p style="margin-top:0.5rem;"><strong>“Build ReviewRadar with Analyze button…”</strong></p>
+        </div>
+        <div class="card">
+          <h3>3. Constraints</h3>
+          <p>Stack, style, limits, format.</p>
+          <p style="margin-top:0.5rem;"><strong>“TypeScript, Tailwind, one page UI…”</strong></p>
+        </div>
+      </div>
+      <div class="note">Prompt quality matters more than which chatbot logo you use.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 3 · Practice</div>
+      <h2>Bad prompt vs good prompt</h2>
+      <div class="grid-2">
+        <div class="card bad">
+          <div class="compare-label" style="color:var(--bad);">Weak</div>
+          <h3>Bad</h3>
+          <div class="prompt">Make a review app</div>
+        </div>
+        <div class="card good">
+          <div class="compare-label" style="color:var(--good);">Strong</div>
+          <h3>Good</h3>
+          <div class="prompt">Act as a senior Next.js engineer.
+Build ReviewRadar: one text box, Analyze button, sentiment result, Gemini explanation + suggested reply.
+Use App Router, TypeScript, Tailwind.
+Provide full file contents and run commands.</div>
+        </div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 3 · Teaching</div>
+      <h2>Which coding LLM should you use?</h2>
+      <table>
+        <tr><th>Model</th><th>Strength in workshops</th></tr>
+        <tr><td><strong>ChatGPT (GPT)</strong></td><td>Great general coding partner and fast iteration</td></tr>
+        <tr><td><strong>Claude</strong></td><td>Strong with longer code and careful edits</td></tr>
+        <tr><td><strong>DeepSeek</strong></td><td>Strong coding model and useful alternative</td></tr>
+      </table>
+      <div class="note">Use whichever you have access to. The prompt structure stays the same.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 4 · Live Demo</div>
+      <h2>Today we build: ReviewRadar</h2>
+      <p>A feedback analyzer for startups and campus projects.</p>
+      <div class="flow">
+        <span>Paste review</span><span class="arrow">→</span>
+        <span>ML predicts sentiment</span><span class="arrow">→</span>
+        <span>Gemini explains</span><span class="arrow">→</span>
+        <span>Suggested reply</span><span class="arrow">→</span>
+        <span>Deploy</span>
+      </div>
+      <div class="grid-2" style="margin-top:1.1rem;">
+        <div class="card">
+          <h3>Why this demo?</h3>
+          <ul>
+            <li>Clear business story</li>
+            <li>Uses dataset + generative AI</li>
+            <li>Beginner-friendly UI</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stack</h3>
+          <ul>
+            <li>Next.js + TypeScript</li>
+            <li>scikit-learn ML model</li>
+            <li>Gemini Flash-Lite</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 4 · Demo Roadmap</div>
+      <h2>8 steps we will demonstrate</h2>
+      <ol class="steps">
+        <li><strong>API key</strong> — Google AI Studio for Gemini</li>
+        <li><strong>Idea → prompt</strong> — convert the product idea into instructions</li>
+        <li><strong>Code generation</strong> — GPT / Claude / DeepSeek</li>
+        <li><strong>VS Code setup</strong> — paste, install, run locally</li>
+        <li><strong>Dataset</strong> — small labeled CSV from Kaggle-style data</li>
+        <li><strong>Train ML model</strong> — Logistic Regression → model.json</li>
+        <li><strong>Integrate Gemini</strong> — explanation + polite reply</li>
+        <li><strong>Test &amp; deploy</strong> — verify flow, ship on Vercel</li>
+      </ol>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Teaching Checkpoint</div>
+      <h2>How the system works</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Input</h3>
+          <p>User pastes a customer/product review into the web app.</p>
+        </div>
+        <div class="card">
+          <h3>ML Model</h3>
+          <p>Classifies text as Positive or Negative using patterns learned from dataset examples.</p>
+        </div>
+        <div class="card">
+          <h3>Gemini</h3>
+          <p>Reads the review + prediction, then writes an explanation and suggested reply.</p>
+        </div>
+      </div>
+      <div class="note">Participants should be able to explain this architecture in one sentence before we deploy.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Teaching · Dataset</div>
+      <h2>What makes a good workshop dataset?</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Keep it small &amp; clear</h3>
+          <ul>
+            <li>Text + label columns</li>
+            <li>About 2,000–5,000 rows is enough</li>
+            <li>Labels like 0/1 or negative/positive</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>What we teach with it</h3>
+          <ul>
+            <li>Clean / prepare data</li>
+            <li>Train a simple classifier</li>
+            <li>Export model for the app</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prompt">text,label
+"I love this product",1
+"Terrible quality, never again",0</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Teaching · ML + AI together</div>
+      <h2>Two engines, one product</h2>
+      <table>
+        <tr><th>Part</th><th>Job in ReviewRadar</th><th>Output</th></tr>
+        <tr><td><strong>ML classifier</strong></td><td>Detect sentiment from learned patterns</td><td>Positive / Negative + confidence</td></tr>
+        <tr><td><strong>Gemini Flash-Lite</strong></td><td>Generate human-friendly response</td><td>Explanation + suggested reply</td></tr>
+        <tr><td><strong>Web app</strong></td><td>Connect both and show results</td><td>Usable product UI</td></tr>
+        <tr><td><strong>Vercel</strong></td><td>Make it public</td><td>Live URL</td></tr>
+      </table>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Live Demo Support</div>
+      <h2>Test cases to try on stage</h2>
+      <div class="grid-3">
+        <div class="card good">
+          <h3>Positive</h3>
+          <div class="prompt">I absolutely love this product. Fast delivery and amazing quality!</div>
+        </div>
+        <div class="card bad">
+          <h3>Negative</h3>
+          <div class="prompt">Terrible experience. Broke on day one and support ignored me.</div>
+        </div>
+        <div class="card">
+          <h3>Mixed</h3>
+          <div class="prompt">Good idea overall, but setup was confusing and a bit slow.</div>
+        </div>
+      </div>
+      <div class="note">Mixed/sarcastic examples teach that AI is useful, but not perfect.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 5 · Recap</div>
+      <h2>What we covered</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Concepts</h3>
+          <ul>
+            <li>Startups = problem → solution → ship</li>
+            <li>Vibecoding workflow</li>
+            <li>Prompt formula: Role + Goal + Constraints</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Build path</h3>
+          <ul>
+            <li>LLM generates app code</li>
+            <li>Dataset trains separate ML model</li>
+            <li>Gemini powers generative features</li>
+            <li>Vercel deploys the product</li>
+          </ul>
+        </div>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Session 5 · Next Steps</div>
+      <h2>Your 7-day practice plan</h2>
+      <ol class="steps">
+        <li><strong>Day 1–2:</strong> Rebuild ReviewRadar locally</li>
+        <li><strong>Day 3:</strong> Change the idea (spam detector, campus complaint classifier, interview coach)</li>
+        <li><strong>Day 4:</strong> Improve prompts and UI</li>
+        <li><strong>Day 5:</strong> Deploy to Vercel</li>
+        <li><strong>Day 6–7:</strong> Share with a friend and collect feedback</li>
+      </ol>
+      <div class="note">A PDF handout with workflow, tools, and prompts will be shared for independent practice.</div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Remember</div>
+      <h1>You don’t need to know everything.</h1>
+      <p>You need a problem, a clear prompt, and the courage to ship version one.</p>
+      <div class="flow">
+        <span>Problem</span><span class="arrow">→</span>
+        <span>Prompt</span><span class="arrow">→</span>
+        <span>Prototype</span><span class="arrow">→</span>
+        <span>Deploy</span>
+      </div>
+    </div></section>
+<section class="slide"><div class="card-wrap">
+      <div class="eyebrow">Build2Launch</div>
+      <h1>Thank you</h1>
+      <p>Let’s turn ideas into working AI-powered applications.</p>
+      <div class="meta">
+        <div class="chip">NICKHI Campus Ambassador</div>
+        <div class="chip">Questions welcome</div>
+        <div class="chip">Now go build</div>
+      </div>
+    </div></section></body></html>
